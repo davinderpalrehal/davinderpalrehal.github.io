@@ -1,0 +1,9 @@
+@use 'partials/reset';
+@use 'partials/base';
+@use 'partials/typography';
+@use 'partials/nav';
+@use 'partials/logo';
+
+body.base-line {
+  background: repeating-linear-gradient(white, white 0.9rem, red 1rem);
+}

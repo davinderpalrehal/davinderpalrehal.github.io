@@ -1,0 +1,12 @@
+nav {
+  display: none;
+  background: var(--c-highlight-bg);
+  padding: 1em;
+
+  a {
+    color: var(--c-highlight-fg);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.25em;
+  }
+}

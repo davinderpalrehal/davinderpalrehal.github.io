@@ -1,0 +1,26 @@
+@use 'base' as *;
+
+#davi-logo {
+  border-radius: 100em;
+  display: flex;
+  width: 40vw;
+  height: 40vw;
+  min-width: 185px;
+  min-height: 185px;
+  max-width: 250px;
+  max-height: 250px;
+  place-content: center;
+  background: var(--c-primary-dary-bg);
+  margin: 15% auto 1.5em;
+
+  img {
+    position: relative;
+    top: -10%;
+    filter: drop-shadow(0 2px 2px var(--c-black));
+    transition: filter 0.5s ease;
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px var(--c-black));
+    }
+  }
+}

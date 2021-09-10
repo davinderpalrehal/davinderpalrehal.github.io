@@ -1,13 +1,10 @@
 const template = `
-    <h1>Davinderpal Singh Rehal</h1>
-   <h2>Full Stack Web Developer</h2>
-   <p>Hello world! I am a Full Stack Web Developer, based in Nairobi, Kenya with a special interest in Front-end development.</p>
-   <p>In an attempt to learn TypeScript, this site will have a bunch of basic projects that are created in TS.</p>
-
-   <h3>TypeScript Projects</h3>
-   <ul>
-     <li><a data-project="colors">Changing Background Colors Randomly</a></li>
- </ul>
+    <section class="container">
+        <h1>Full Stack Software Engineer</h1>
+        <p class="subtitle">Hi, I'm <em>Davinderpal</em>,</p>
+        <p>A Full Stack Software engineer from <a href="#">Nairobi</a>, <a href="#">Kenya</a>. Currently working at <a href="#">KOKO Networks</a> as a <a href="#">Team Lead</a> and <a href="#">Senior Engineer</a>.</p>
+        <p>Most recently, I am trying to sharpen my <a href="#">TypeScript</a> skills so you will find some basic projects below.</p>        
+    </section>
 `
 
 const render = (contentBlock: HTMLElement) => {

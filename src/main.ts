@@ -1,22 +1,21 @@
-import './style.scss'
+import './css/style.scss'
+import daviLogo from './img/logo.png'
 import {renderHomePage} from "./Pages/Home";
 
 const navigation = document.querySelector<HTMLDivElement>('#navigation')!
 
 navigation.innerHTML = `
+<header>
     <nav>
         <ul class="nav">
             <li><a href="#" data-project="/">Home</a></li>
-            <li><a href="#"  data-project="colors">Colors</a></li>
-            <li><a href="#"  data-project="another">Another route</a></li>
-            <li><a href="#"  data-project="third">Third route</a></li>
-            <li><a href="#"  data-project="fourth">Fourth route</a></li>
         </ul>
     </nav>
+    <h1 id="davi-logo"><img src="" alt="Davinderpal's face"></h1>
+    </header>
 `
 
 setPageContent()
-
 
 const links: NodeListOf<HTMLLinkElement> = document.querySelectorAll<HTMLLinkElement>('.nav a')
 
@@ -52,6 +51,9 @@ function setPageContent() {
         default:
             if (pageContent) {
                 renderHomePage(pageContent)
+                const daviLogoImg: HTMLImageElement | null = document.querySelector<HTMLImageElement>('#davi-logo img')
+                if (daviLogoImg) daviLogoImg.src = daviLogo
+                console.log(daviLogo)
             }
             break
 

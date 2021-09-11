@@ -1,6 +1,7 @@
 import './css/style.scss'
 import daviLogo from './img/logo.png'
 import {renderHomePage} from "./Pages/Home";
+import { renderColorsPage } from './Pages/Colors';
 
 const navigation = document.querySelector<HTMLDivElement>('#navigation')!
 
@@ -43,8 +44,7 @@ function setPageContent() {
     switch (page) {
         case '/colors':
             if (pageContent) {
-                pageContent.innerHTML = '<h1>Colors Project</h1>'
-                // renderHomePage(pageContent)
+                renderColorsPage(pageContent)
             }
 
             break

@@ -3,6 +3,8 @@
 @use 'partials/typography';
 @use 'partials/nav';
 @use 'partials/logo';
+@use 'partials/buttons';
+@use 'partials/code';
 
 body.base-line {
   background: repeating-linear-gradient(white, white 0.9rem, red 1rem);

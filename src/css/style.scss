@@ -5,6 +5,7 @@
 @use 'partials/logo';
 @use 'partials/buttons';
 @use 'partials/code';
+@use 'partials/lists';
 
 body.base-line {
   background: repeating-linear-gradient(white, white 0.9rem, red 1rem);
